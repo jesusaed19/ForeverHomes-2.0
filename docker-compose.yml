@@ -1,0 +1,11 @@
+version: '3'
+services:
+  forever-image:
+    build: .
+    container_name: "forever-container"
+    ports:
+      - "8000:8000"
+    volumes:
+      - forever-data:/code/
+volumes:
+  forever-data:

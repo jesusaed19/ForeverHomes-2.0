@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{url_for('static', path='/img/favicon.png')}}" type="image/x-icon">
+    
+    
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="{{url_for('static', path='/css/swiper-bundle.min.css')}}">
+    
+    <!-- Css -->
+    <link rel="stylesheet" href="{{url_for('static', path='/css/style.css')}}">
+    
+    <title>Forever Homes LLC</title>
+
+    <style>
+        body{
+            background-color: #fff;
+        }
+    </style>
+
+</head>
+<body>
+
+    <section class="modal">
+        <div class="modal__container">
+            <img src="{{url_for('static', path='/img/logo.png')}}" class="modal__img">
+            <h2 class="modal__title">¡Thanks for contacting us!</h2>
+            <p class="modal__paragraph">We will be in touch very soon.</p>
+            <a href="http://127.0.0.1:8000/" class="modal__close">Go Back</a>
+        </div>
+    </section>
+
+
+     <!--=============== SCROLLREVEAL ===============-->
+     <script src="{{url_for('static', path='/js/scrollreveal.min.js')}}"></script>
+
+     <!--=============== SWIPER JS ===============-->
+     <script src="{{url_for('static', path='/js/swiper-bundle.min.js')}}"></script>
+
+     <!--=============== MIXITUP FILTER ===============-->
+     <script src="{{url_for('static', path='/js/mixitup.min.js')}}"></script>
+
+     <!--=============== MAIN JS ===============-->
+    <script src="{{url_for('static', path='/js/main.js')}}"></script>
+</body>
+</html>
