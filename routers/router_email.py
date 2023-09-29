@@ -21,4 +21,3 @@ async def dataemail(request: Request, data_email = Email, name: str = Form(), ma
     email(data_email.mail, data_email.name, data_email.project)
     
     return templates.TemplateResponse("contact.html", {"request": request})
-    # return Response(status_code=status.HTTP_204_NO_CONTENT)
