@@ -233,6 +233,11 @@ body.light-theme{
     width: 120px;
 }
 
+
+.logo-arrow{
+  font-size: 40px;
+  color: var(--title-color);
+}
 /*=============== HEADER & NAV===============*/
 
 .header{
@@ -890,9 +895,8 @@ New changes
 .work__img{
   object-fit: cover;
   border-radius: 1rem;
-  margin-bottom: .75rem;
-  width: 450px;
-  height: 220px;
+  width: 100%;
+  height: 100%;
   
 }
 
