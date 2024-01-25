@@ -1265,7 +1265,7 @@ New changes
 
   .work__img{
     width: 295px;
-    max-height: 100px;
+    max-height: 200px;
   }
 
   .contact__info{
@@ -1486,6 +1486,11 @@ New changes
   .work__item{
     display: flex;
     justify-content: center;
+  }
+
+  .work__img{
+    width: 100%;
+    height: 290px;
   }
   
 }
