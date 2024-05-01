@@ -17,6 +17,9 @@
     <!-- Css -->
     <link rel="stylesheet" href="{{url_for('static', path='/css/style.css')}}" />
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <title>Forever Homes LLC</title>
 </head>
 
@@ -38,7 +41,7 @@
                 <a href="#work" class="nav__item">Projects</a>
                 <a href="#contact" class="nav__item">Contact</a>
                  <!-- Theme change button  -->
-                <i class="bx bx-moon change-theme" id="theme-button"></i>
+                <!-- <i class="bx bx-moon change-theme" id="theme-button"></i> -->
                 
             </div>
         </nav>
@@ -116,70 +119,297 @@
             <span class="section__subtitle">Our Portfolio</span>
             <h2 class="section__title">Recent Works</h2>
 
-            <!-- <div class="work__filters">
-                <span class="work__item  active-work " data-filter=".one">All</span>
-                <span class="work__item" data-filter=".decks">Decks</span>
-                <span class="work__item" data-filter=".fencing">Fencing</span>
-                <span class="work__item" data-filter=".framing">Framing</span>
-                <span class="work__item" data-filter=".roof">Roof</span>
-                <span class="work__item" data-filter=".garage">Garage</span>
-                <span class="work__item" data-filter=".siding">Siding</span>
-                <span class="work__item" data-filter=".sunroom">Sunroom</span>
-            </div> -->
-
+        
             <div class="work__container container grid">
 
                 <!-- =========== Fencing ==================== -->
 
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Fencing</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+    
+                            <div class="work__container container grid">
+                                
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/fencing/fe01.jpg')}}" alt="" class="work__img"  />
+             
+                                 
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/fencing/fe02.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/fencing/fe03.jpg')}}" alt="" class="work__img"  />
+             
+                                 
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/fencing/fe04.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/fences/fen01.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/fences/fen02.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/fences/fen03.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/fences/fen04.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+    
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+
                 
                 <div class="work__card mix one fencing">
-                   <a href="/fencing"> <img src="{{url_for('static', path='/img/fencing/fe01.jpg')}}" alt="" class="work__img fencing" /></a>
+                    <img src="{{url_for('static', path='/img/fencing/fe01.jpg')}}" alt="" class="work__img"  data-bs-toggle="modal" data-bs-target="#exampleModal1" style="cursor: pointer;" />
 
                     <h3 class="work__title">Fencing</h3>
 
-                    <a href="/fencing" class="work__button">
-                            see more<i class="bx bx-right-arrow-alt work__icon"></i>
-                        </a>
+                    <span style="cursor: pointer;"  class="work__button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        see more<i class="bx bx-right-arrow-alt work__icon"></i>
+                    </span>
                 </div>
             
 
 
                 <!-- ============== Decks =================== -->
 
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Decks</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+    
+                            <div class="work__container container grid">
+
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/decks/decks01.jpg')}}" alt="" class="work__img"  />
+             
+                                 
+                             </div>
+
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/decks/decks02.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/decks/decks03.jpg')}}" alt="" class="work__img"  />
+             
+                                 
+                             </div>
+
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/decks/decks04.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/decks/decks05.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/decks/decks06.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+    
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+
                 <div class="work__card mix one decks">
-                    <a href="/Decks"> <img src="{{url_for('static', path='/img/decks/decks01.jpg')}}" alt="" class="work__img" /></a>
+                    <img src="{{url_for('static', path='/img/decks/decks01.jpg')}}" alt="" class="work__img"  data-bs-toggle="modal" data-bs-target="#exampleModal2" style="cursor: pointer;" />
 
                     <h3 class="work__title">Decks</h3>
 
-                    <a href="/Decks" class="work__button">
+                    <span style="cursor: pointer;"  class="work__button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                         see more<i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a>
+                    </span>
                 </div>
 
                 <!-- ================== Framing ================= -->
 
+                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Framing</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+    
+                            <div class="work__container container grid">
+                            <div class="work__card mix one fencing">
+                                <img src="{{url_for('static', path='/img/framing/f00.jpg')}}" alt="" class="work__img"  />
+             
+                                 
+                             </div>
+                            <div class="work__card mix one fencing">
+                                <img src="{{url_for('static', path='/img/framing/f01.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/framing/f02.jpg')}}" alt="" class="work__img"  />
+             
+                                 
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/framing/f03.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/framing/f04.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/framing/f05.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/framing/f06.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+    
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+
                 <div class="work__card mix one framing">
-                    <img src="{{url_for('static', path='/img/framing/f00.jpg')}}" alt="" class="work__img" />
+                    <img src="{{url_for('static', path='/img/framing/f00.jpg')}}" alt="" class="work__img"  data-bs-toggle="modal" data-bs-target="#exampleModal3" style="cursor: pointer;" />
 
                     <h3 class="work__title">Framing</h3>
 
-                    <a href="/Framing" class="work__button">
-                        see more <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a>
+                    <span style="cursor: pointer;"  class="work__button" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        see more<i class="bx bx-right-arrow-alt work__icon"></i>
+                    </span>
                 </div>
 
 
 
                 <!-- ================== Roof ================= -->
 
+                <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Roof</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+    
+                            <div class="work__container container grid">
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/roof/roof01.jpg')}}" alt="" class="work__img"  />
+             
+                                 
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/roof/roof02.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/roof/roof03.jpg')}}" alt="" class="work__img"  />
+             
+                                 
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/roof/roof04.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/roof/roof05.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/roof/roof06.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/roof/roof07.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/roof/roof08.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/roof/roof09.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+    
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+
                 <div class="work__card mix one roof">
-                    <img src="{{url_for('static', path='/img/roof/roof01.jpg')}}" alt="" class="work__img" />
+                    <img src="{{url_for('static', path='/img/roof/roof01.jpg')}}" alt="" class="work__img"  data-bs-toggle="modal" data-bs-target="#exampleModal4" style="cursor: pointer;" />
 
                     <h3 class="work__title">Roof</h3>
 
-                    <a href="/fencing" class="work__button">
+                    <span style="cursor: pointer;"  class="work__button" data-bs-toggle="modal" data-bs-target="#exampleModal4">
                         see more<i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a>
+                    </span>
                 </div>
 
                
@@ -187,38 +417,179 @@
 
                 <!-- =============== Garage ================= -->
 
+                <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Garage</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+    
+                            <div class="work__container container grid">
+                            <div class="work__card mix one fencing">
+                                <img src="{{url_for('static', path='/img/garage/garage01.jpg')}}" alt="" class="work__img"  />
+             
+                                 
+                             </div>
+                            <div class="work__card mix one fencing">
+                                <img src="{{url_for('static', path='/img/garage/garage02.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one fencing">
+                                <img src="{{url_for('static', path='/img/garage/garage03.jpg')}}" alt="" class="work__img"  />
+             
+                                 
+                             </div>
+                            <div class="work__card mix one fencing">
+                                <img src="{{url_for('static', path='/img/garage/garage04.jpg')}}" alt="" class="work__img"  /> 
+             
+                                
+                             </div>
+                            
+    
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+
                 <div class="work__card mix one garage">
-                    <img src="{{url_for('static', path='/img/garage/garage01.jpg')}}" alt="" class="work__img" />
+                    <img src="{{url_for('static', path='/img/garage/garage01.jpg')}}" alt="" class="work__img"  data-bs-toggle="modal" data-bs-target="#exampleModal5" style="cursor: pointer;" />
 
                     <h3 class="work__title">Garage</h3>
 
-                    <a href="/fencing" class="work__button">
+                    <span style="cursor: pointer;"  class="work__button" data-bs-toggle="modal" data-bs-target="#exampleModal5">
                         see more<i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a>
+                    </span>
                 </div>
 
                 <!-- =============== Siding ================= -->
 
+                <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Siding</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+    
+                            <div class="work__container container grid">
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/siding/si01.jpg')}}" alt="" class="work__img "  />
+             
+                                 
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/siding/si02.jpg')}}" alt="" class="work__img "  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/siding/si03.jpg')}}" alt="" class="work__img "  />
+             
+                                 
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/siding/si04.jpg')}}" alt="" class="work__img "  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/siding/si05.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/siding/si06.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+    
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+
                 <div class="work__card mix one siding">
-                    <img src="{{url_for('static', path='/img/siding/si01.jpg')}}" alt="" class="work__img" />
+                    <img src="{{url_for('static', path='/img/siding/si01.jpg')}}" alt="" class="work__img"  data-bs-toggle="modal" data-bs-target="#exampleModal6" style="cursor: pointer;" />
 
                     <h3 class="work__title">Siding</h3>
 
-                    <a href="/fencing" class="work__button">
+                    <span style="cursor: pointer;"  class="work__button" data-bs-toggle="modal" data-bs-target="#exampleModal6">
                         see more<i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a>
+                    </span>
                 </div>
 
                 <!-- =============== Sunroom ================= -->
 
-                <div class="work__card mix one sunroom">
-                    <img src="{{url_for('static', path='/img/sunroom/sun01.jpg')}}" alt="" class="work__img" />
+                <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Sunroom</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+    
+                            <div class="work__container container grid">
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/sunroom/sun01.jpg')}}" alt="" class="work__img"  />
+             
+                                 
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/sunroom/sun02.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/sunroom/sun03.jpg')}}" alt="" class="work__img"  />
+             
+                                 
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/sunroom/sun04.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/sunroom/sun05.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+                            <div class="work__card mix one">
+                                <img src="{{url_for('static', path='/img/sunroom/sun06.jpg')}}" alt="" class="work__img"  />
+             
+                                
+                             </div>
+    
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="work__card mix one sunroom"  >
+                    <img src="{{url_for('static', path='/img/sunroom/sun01.jpg')}}" alt="" class="work__img" data-bs-toggle="modal" data-bs-target="#exampleModal7" style="cursor: pointer;" />
 
                     <h3 class="work__title">Sunroom</h3>
 
-                    <a href="/fencing" class="work__button">
+                    <span style="cursor: pointer;"  class="work__button" data-bs-toggle="modal" data-bs-target="#exampleModal7">
                         see more<i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a>
+                    </span>
                 </div>
 
             </div>
@@ -342,6 +713,10 @@
             </span>
         </div>
     </footer>
+
+
+    <!-- ============== Bootstrap ================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!--=============== SCROLLREVEAL ===============-->
     <script src="{{url_for('static', path='/js/scrollreveal.min.js')}}"></script>
