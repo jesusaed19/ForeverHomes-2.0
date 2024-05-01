@@ -15,17 +15,6 @@ templates = Jinja2Templates(directory="templates")
 async def root(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
-@router.get("/fencing")
-async def fencing(request: Request):
-    return templates.TemplateResponse("fencing.html", {"request": request})
-
-@router.get("/Decks")
-async def fencing(request: Request):
-    return templates.TemplateResponse("decks.html", {"request": request})
-
-@router.get("/Framing")
-async def fencing(request: Request):
-    return templates.TemplateResponse("framing.html", {"request": request})
 
 
 
